@@ -1,6 +1,9 @@
 version: '3.3'
+
 services:
   movies:
     image: batheiah/movies
     ports:
       - "81:80"
+    deploy:
+      replicas: 1

@@ -1,25 +1,25 @@
-version: '3.8'
+version: '3.3'
 services:
   movies:
-    image: batheiah/movie
+    image: batheiah/paytmmovie
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: batheiah/train
+    image: batheiah/paytmtrain
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: batheiah/recharge
+    image: batheiah/paytmrecharge
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: batheiah/dth
+    image: batheiah/paytmdth
     ports:
       - "84:80"
     deploy:

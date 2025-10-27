@@ -4,6 +4,6 @@ services:
   movies:
     image: batheiah/movies
     ports:
-      - "81:80"
+      - "90:80"
     deploy:
       replicas: 1

@@ -4,27 +4,27 @@ services:
   movies:
     image: batheiah/movies
     ports:
-      - "72:80"
+      - "61:80"
     deploy:
       replicas: 3
 
   train:
     image: batheiah/train
     ports:
-      - "73:80"
+      - "62:80"
     deploy:
       replicas: 3
 
   dth:
     image: batheiah/dth
     ports:
-      - "74:80"
+      - "63:80"
     deploy:
       replicas: 3
 
   recharge:
     image: batheiah/recharge
     ports:
-      - "75:80"
+      - "64:80"
     deploy:
       replicas: 3

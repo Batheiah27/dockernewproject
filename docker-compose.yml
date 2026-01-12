@@ -16,8 +16,14 @@ services:
       replicas: 3
 
   dth:
-    image: batheiah/recharge 
+    image: batheiah/dth 
     ports:
       - "83:80"
+    deploy:
+      replicas: 3
+  recharge:
+    image: batheiah/recharge
+    ports:
+      - "84:80"
     deploy:
       replicas: 3
